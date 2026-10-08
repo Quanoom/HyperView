@@ -1,4 +1,5 @@
-# Goal of This Project : 
+# HyperView Platform : 
+### Introduction : 
 <b>HyperView</b>, a comprehensive software platform created for the advanced analysis of multispectral and hyperspectral remote sensing imagery. 
 The research presented systematically explores several key domains of image processing. 
 A significant focus is placed on the estimation of Land Surface Temperature (LST), for which the Practical Split-Window Algorithm (PSWA) and its SWCVR extension are implemented and validated using Landsat 8 data.
