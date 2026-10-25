@@ -12,4 +12,5 @@ This is achieved by implementing and exhaustively testing the algorithm on Raspb
 ### Graphic User Interface : 
 #### Main Window and Layout :
 The main window of HyperView, defined in the `main_window.py` module by the `MainWindow` class, serves as the central container for all the software's features. It follows a standard layout: a menu bar at the top; a navigation toolbar on the left for quick access to image-interaction tools; a central area dedicated to displaying images via a tabbed system; and a status bar at the bottom that shows contextual information, such as the name of the loaded file. The overall layout is designed to maximize the space available for image display while keeping essential tools easily accessible.
+
 <img width="783" height="465" alt="Screenshot_25-10-2026_164011_" src="https://github.com/user-attachments/assets/81405f96-4c2d-44a1-9495-47ddfc1adcb3" />
