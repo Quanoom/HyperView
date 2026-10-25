@@ -55,7 +55,7 @@ The main image display is handled by the `ImageDisplayWidget`, which incorporate
 #### Color Composites (RGB, FCC standard) :
 HyperView allows you to generate color composites for better visual interpretation of multispectral and hyperspectral images. A "natural" color composite feature (True Color Composite) attempts to assign the bands closest to visible red, green, and blue to the corresponding display channels, based on the wavelength information available in the metadata (displayColorComposite in main_window.py). For Landsat data, a specific option (displayLandsatColorComposite) allows you to quickly create standard color composites, such as natural color composites (Bands 4, 3, 2 for Landsat 8/9 or 3, 2, 1 for Landsat 4/5/7) or false infrared color composites (e.g., Near Infrared, Red, Green). Each channel in the composition is individually normalized before being combined to form the color image.
 
-<img width="939" height="513" alt="Screenshot_25-10-2026_16417_" src="https://github.com/user-attachments/assets/97ba434e-8a37-4037-b77a-afd2de015f14" />
+<img width="626" height="342" alt="Screenshot_25-10-2026_165613_" src="https://github.com/user-attachments/assets/5826dc48-7746-41b5-a220-99961df33a9f" />
 
 ### Basic Image Processing Operations :
 Beyond visualization, HyperView includes tools for elementary image manipulation.
