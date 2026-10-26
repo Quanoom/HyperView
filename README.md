@@ -1,4 +1,5 @@
 # HyperView Platform : 
+## Task 1:
 ### Introduction : 
 <b>HyperView</b>, a comprehensive software platform created for the advanced analysis of multispectral and hyperspectral remote sensing imagery. 
 The research presented systematically explores several key domains of image processing. 
@@ -80,3 +81,45 @@ The `full_ref.py` module provides a set of functions for the quantitative assess
 • Spectral Angle Mapper (SAM). These metrics are accessible via the "Fusion" menu following certain processes, enabling an objective evaluation of the results.
 ### Conclusion : 
 The HyperView software—a tool developed specifically to address the needs for analyzing and manipulating multispectral and hyperspectral remote sensing imagery within the scope of this thesis. We have detailed the motivations behind its development, its modular software architecture, the features of its graphical user interface—designed for intuitive interaction—and its general functionalities. These include a robust multi-format data-loading system with specialized handling for Landsat scenes; interactive visualization tools for exploring spectral bands and pixel profiles; fundamental image-processing operations, such as cropping and spectral transformation via Spectral Response Functions (SRF); and modules for assessing image quality. The software is built upon proven open-source technologies, primarily the Python ecosystem—utilizing PyQt5 for the interface—along with libraries such as NumPy, SciPy, GDAL, and Matplotlib for data processing and visualization.
+## Task 2 :
+### Embedded implementation on Raspberry Pi 3B/3B+:  
+#### Objective:  
+Implementing the HSB-SV algorithm on a Raspberry Pi serves several purposes. First, it allows for the evaluation of its performance under real-world conditions on an embedded platform—a type of hardware frequently used in resource-constrained applications. This deployment facilitates real-time testing, which is essential for validating the algorithm's responsiveness and efficiency. Furthermore, it enables precise measurement of execution time and memory consumption—two critical criteria for assessing the viability of the algorithm in embedded or autonomous contexts.
+
+<img width="264" height="169" alt="Screenshot_26-10-2026_15740_" title="Pi 3B" src="https://github.com/user-attachments/assets/b42f3c34-0806-4b59-8ce2-75257f4770c4" />
+
+<img width="270" height="171" alt="Screenshot_26-10-2026_15747_" title="Pi 3B+" src="https://github.com/user-attachments/assets/d484c146-e539-4a23-ae89-e3f93a78abac" />
+
+### Porting the HSB-SV algorithm:
+#### Adapting the code to hardware constraints:
+The HSB-SV algorithm is complex in terms of matrix computations and memory requirements.
+To enable its execution on an embedded platform (such as a Raspberry Pi or an
+advanced microcontroller), certain adaptations are necessary:
+• Reduction in the number of materials: In an embedded context, the number
+of extracted endmembers is reduced (e.g., 7 instead of 10 or more) to lighten the
+computational load associated with spectral factorization.
+• Code optimizations:
+• Replacing heavy libraries (NumPy, SciPy) with lightweight implementations
+where necessary.
+• Using single-precision data types (float32) instead of double-precision.
+#### Testing methodology:
+To evaluate the performance of the HSB-SV algorithm on a Raspberry Pi, a
+rigorous testing protocol was established.
+• Number of tests: Each scenario was executed 10 times on both Raspberry Pi
+models (3B and 3B+) to ensure the reliability of the results and to limit the
+impact of occasional variations.
+• Metrics recorded: During each execution, the following parameters were
+systematically recorded:
+  • Total execution time (in seconds)
+  • Maximum processor usage (CPU max %) during execution
+  • Random-access memory (RAM) usage (in MB)
+• Fixed conditions:
+  • The same input image was used for all tests.
+  • The parameters of the HSB-SV algorithm remained identical to
+ensure a fair comparison. 
+• Comparison between platforms: 
+  • The tests were conducted on two versions of the platform: Raspberry 
+Pi 3B and Raspberry Pi 3B+. 
+  • The objective is to compare performance—in terms of execution speed 
+and resource usage—between these two models, which have slightly 
+different hardware specifications.
