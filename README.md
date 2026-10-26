@@ -92,34 +92,34 @@ Implementing the HSB-SV algorithm on a Raspberry Pi serves several purposes. Fir
 
 ### Porting the HSB-SV algorithm:
 #### Adapting the code to hardware constraints:
-The HSB-SV algorithm is complex in terms of matrix computations and memory requirements.
-To enable its execution on an embedded platform (such as a Raspberry Pi or an
-advanced microcontroller), certain adaptations are necessary:
-• Reduction in the number of materials: In an embedded context, the number
+<p>The HSB-SV algorithm is complex in terms of matrix computations and memory requirements.</p>
+<p>To enable its execution on an embedded platform (such as a Raspberry Pi or an
+advanced microcontroller), certain adaptations are necessary:</p>
+<p>• Reduction in the number of materials: In an embedded context, the number
 of extracted endmembers is reduced (e.g., 7 instead of 10 or more) to lighten the
-computational load associated with spectral factorization.
-• Code optimizations:
-• Replacing heavy libraries (NumPy, SciPy) with lightweight implementations
-where necessary.
-• Using single-precision data types (float32) instead of double-precision.
+computational load associated with spectral factorization.</p>
+<p>• Code optimizations:</p>
+    <pre>• Replacing heavy libraries (NumPy, SciPy) with lightweight implementations
+          where necessary.</pre>
+    <pre>• Using single-precision data types (float32) instead of double-precision.</pre>
 #### Testing methodology:
-To evaluate the performance of the HSB-SV algorithm on a Raspberry Pi, a
-rigorous testing protocol was established.
-• Number of tests: Each scenario was executed 10 times on both Raspberry Pi
+<p>To evaluate the performance of the HSB-SV algorithm on a Raspberry Pi, a
+rigorous testing protocol was established.</p>
+<p>• Number of tests: Each scenario was executed 10 times on both Raspberry Pi
 models (3B and 3B+) to ensure the reliability of the results and to limit the
-impact of occasional variations.
-• Metrics recorded: During each execution, the following parameters were
-systematically recorded:
-  <p>• Total execution time (in seconds)</p>
-  <p>• Maximum processor usage (CPU max %) during execution</p>
-  <p>• Random-access memory (RAM) usage (in MB)</p>
+impact of occasional variations.</p>
+<p>• Metrics recorded: During each execution, the following parameters were
+systematically recorded:</p>
+    <pre>• Total execution time (in seconds)</pre>
+    <pre>• Maximum processor usage (CPU max %) during execution</pre>
+    <pre>• Random-access memory (RAM) usage (in MB)</pre>
 <p>• Fixed conditions:</p>
-  <p>• The same input image was used for all tests.</p>
-  <p>• The parameters of the HSB-SV algorithm remained identical to
-ensure a fair comparison.</p>
+    <pre>• The same input image was used for all tests.</pre>
+    <pre>• The parameters of the HSB-SV algorithm remained identical to
+ensure a fair comparison.</pre>
 <p>• Comparison between platforms: </p>
-  <p>• The tests were conducted on two versions of the platform:</p>
+    <pre>• The tests were conducted on two versions of the platform:</pre>
     <pre>• Raspberry Pi 3B and Raspberry Pi 3B+.</pre>
-  <p>• The objective is to compare performance—in terms of execution speed
+    <pre>• The objective is to compare performance—in terms of execution speed
 and resource usage—between these two models, which have slightly 
-different hardware specifications.</p>
+different hardware specifications.</pre>
