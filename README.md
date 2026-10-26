@@ -95,8 +95,8 @@ Implementing the HSB-SV algorithm on a Raspberry Pi serves several purposes. Fir
 <p>The HSB-SV algorithm is complex in terms of matrix computations and memory requirements.</p>
 <p>To enable its execution on an embedded platform (such as a Raspberry Pi or an
 advanced microcontroller), certain adaptations are necessary:</p>
-<p>•<b> Reduction in the number of materials:</b>
-<       pre>In an embedded context, the number
+<p>•<b> Reduction in the number of materials:</b></p>
+       pre>In an embedded context, the number
 of extracted endmembers is reduced (e.g., 7 instead of 10 or more) to lighten the
 computational load associated with spectral factorization.</pre>
 <p>• <b>Code optimizations:</b></p>
