@@ -110,16 +110,16 @@ models (3B and 3B+) to ensure the reliability of the results and to limit the
 impact of occasional variations.
 • Metrics recorded: During each execution, the following parameters were
 systematically recorded:
-  • Total execution time (in seconds)
-  • Maximum processor usage (CPU max %) during execution
-  • Random-access memory (RAM) usage (in MB)
-• Fixed conditions:
-  • The same input image was used for all tests.
-  • The parameters of the HSB-SV algorithm remained identical to
-ensure a fair comparison. 
-• Comparison between platforms: 
-  • The tests were conducted on two versions of the platform: Raspberry 
-Pi 3B and Raspberry Pi 3B+. 
-  • The objective is to compare performance—in terms of execution speed 
+  <p>• Total execution time (in seconds)</p>
+  <p>• Maximum processor usage (CPU max %) during execution</p>
+  <p>• Random-access memory (RAM) usage (in MB)</p>
+<p>• Fixed conditions:</p>
+  <p>• The same input image was used for all tests.</p>
+  <p>• The parameters of the HSB-SV algorithm remained identical to
+ensure a fair comparison.</p>
+<p>• Comparison between platforms: </p>
+  <p>• The tests were conducted on two versions of the platform:</p>
+    <p>• Raspberry Pi 3B and Raspberry Pi 3B+.</p>
+  <p>• The objective is to compare performance—in terms of execution speed
 and resource usage—between these two models, which have slightly 
-different hardware specifications.
+different hardware specifications.</p>
