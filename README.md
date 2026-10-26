@@ -100,9 +100,9 @@ advanced microcontroller), certain adaptations are necessary:</p>
 of extracted endmembers is reduced (e.g., 7 instead of 10 or more) to lighten the
 computational load associated with spectral factorization.</pre>
 <p>• <b>Code optimizations:</b></p>
-    <pre>• Replacing heavy libraries (NumPy, SciPy) with lightweight implementations
+    <pre> Replacing heavy libraries (NumPy, SciPy) with lightweight implementations
           where necessary.</pre>
-    <pre>• Using single-precision data types (float32) instead of double-precision.</pre>
+    <pre> Using single-precision data types (float32) instead of double-precision.</pre>
 <h4>Testing methodology:</h4>
 <p>To evaluate the performance of the HSB-SV algorithm on a Raspberry Pi, a
 rigorous testing protocol was established.</p>
@@ -113,16 +113,16 @@ impact of occasional variations.</pre>
 <p>•<b>Metrics recorded: <b></p>
 <p>During each execution, the following parameters were
 systematically recorded:</p>
-    <pre>• Total execution time (in seconds)</pre>
-    <pre>• Maximum processor usage (CPU max %) during execution</pre>
-    <pre>• Random-access memory (RAM) usage (in MB)</pre>
+    <pre>Total execution time (in seconds)</pre>
+    <pre>Maximum processor usage (CPU max %) during execution</pre>
+    <pre>Random-access memory (RAM) usage (in MB)</pre>
 <p>•<b> Fixed conditions:</b></p>
-    <pre>• The same input image was used for all tests.</pre>
-    <pre>• The parameters of the HSB-SV algorithm remained identical to
+    <pre>The same input image was used for all tests.</pre>
+    <pre>The parameters of the HSB-SV algorithm remained identical to
 ensure a fair comparison.</pre>
 <p>•<b> Comparison between platforms: </b></p>
-    <pre>• The tests were conducted on two versions of the platform:</pre>
-    <pre>• Raspberry Pi 3B and Raspberry Pi 3B+.</pre>
-    <pre>• The objective is to compare performance—in terms of execution speed
+    <pre> The tests were conducted on two versions of the platform:</pre>
+    <pre> Raspberry Pi 3B and Raspberry Pi 3B+.</pre>
+    <pre> The objective is to compare performance—in terms of execution speed
 and resource usage—between these two models, which have slightly 
 different hardware specifications.</pre>
