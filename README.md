@@ -119,7 +119,7 @@ systematically recorded:
 ensure a fair comparison.</p>
 <p>• Comparison between platforms: </p>
   <p>• The tests were conducted on two versions of the platform:</p>
-    <p>• Raspberry Pi 3B and Raspberry Pi 3B+.</p>
+    <pre>• Raspberry Pi 3B and Raspberry Pi 3B+.</pre>
   <p>• The objective is to compare performance—in terms of execution speed
 and resource usage—between these two models, which have slightly 
 different hardware specifications.</p>
