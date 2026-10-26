@@ -110,7 +110,7 @@ rigorous testing protocol was established.</p>
     <pre>Each scenario was executed 10 times on both Raspberry Pi
 models (3B and 3B+) to ensure the reliability of the results and to limit the
 impact of occasional variations.</pre>
-<p>•<b>Metrics recorded: <b></p>
+<p>•<b>Metrics recorded: </b></p>
 <p>During each execution, the following parameters were
 systematically recorded:</p>
     <pre>Total execution time (in seconds)</pre>
