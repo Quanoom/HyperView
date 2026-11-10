@@ -126,3 +126,9 @@ ensure a fair comparison.</pre>
     <pre> The objective is to compare performance—in terms of execution speed
 and resource usage—between these two models, which have slightly 
 different hardware specifications.</pre>
+
+## Note : 
+For more informations, contact : 
+DALI Fethi Abdellatif : abdellatif31dali@gmail.com
+Louchene Wassim : WassimLouchene.1@gmail.com 
+Dr. Brezini Salah Eddine : salaheddine.brezini@univ-usto.dz 
