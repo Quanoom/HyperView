@@ -129,6 +129,6 @@ different hardware specifications.</pre>
 
 ## Note : 
 For more informations, contact : 
-DALI Fethi Abdellatif : abdellatif31dali@gmail.com
-Louchene Wassim : WassimLouchene.1@gmail.com 
-Dr. Brezini Salah Eddine : salaheddine.brezini@univ-usto.dz 
+<br>DALI Fethi Abdellatif : abdellatif31dali@gmail.com
+<br>Louchene Wassim : WassimLouchene.1@gmail.com 
+<br>Dr. Brezini Salah Eddine : salaheddine.brezini@univ-usto.dz 
